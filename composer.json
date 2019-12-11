@@ -1,0 +1,32 @@
+{
+    "name": "spidgorny/pipeline-player-php",
+    "type": "library",
+    "license": "Unlicense",
+    "authors": [
+        {
+            "name": "Slawa",
+            "email": "spidgorny@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "ext-intl": "0"
+        }
+    },
+    "require": {
+        "symfony/yaml": "^5.0",
+        "spidgorny/nadlib": "dev-default",
+        "docker-php/docker-php-api": "v4.1.29.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "files": [
+            "vendor/spidgorny/nadlib/functions/arrayFunctions.php"
+        ]
+    },
+    "bin": [
+        "play.php"
+    ]
+}
